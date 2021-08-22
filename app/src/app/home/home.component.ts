@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener, OnChanges, AfterViewInit } from '@angular/core';
+import { SessionService } from '../session.service';
 
 @Component({
   selector: 'app-home',
@@ -11,11 +12,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:resize', ['$event'])
   onResize() {
-    this.screenHeight = window.innerHeight;
-    this.screenWidth = window.innerWidth;
+    this.session.screenHeight = window.innerHeight;
+    this.session.screenWidth = window.innerWidth;
  }
 
-  constructor() { }
+  constructor(private session: SessionService) { }
 
   ngOnInit(): void {
     this.onResize();
@@ -24,10 +25,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.onResize();
   }
+  
+  navigateToMenu(): void {
+    this.session.navigateTo('about');
+  }
 
   get shouldDisplaySideNav(): boolean {
-    if (this.screenWidth) {
-      return (this.screenWidth > 620);
+    if (this.session.screenWidth) {
+      return (this.session.screenWidth > 620);
     }
     return false;
   }

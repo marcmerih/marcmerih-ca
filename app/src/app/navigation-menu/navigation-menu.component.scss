@@ -1,0 +1,39 @@
+@import '../../styles.scss';
+
+.container-none, .container {
+    display: flex;
+    justify-content: center;
+    background-image: none;
+    text-align: center;
+    height: 100vh;
+    min-width: 600px;
+
+    .rest {
+        .navigation {
+            color: $primary-green;
+            font-family: Gowun Dodum;
+            cursor: pointer;
+            margin-top: 200px;
+        }
+
+        .links {
+            margin-top: 50px;
+        
+            img {
+                width: 2em;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+    background-image: url('../../assets/blob-scene-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-width: 600px;
+}

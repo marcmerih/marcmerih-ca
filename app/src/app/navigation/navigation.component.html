@@ -3,16 +3,16 @@
     <div class="links">
         <img src='../../assets/Icon feather-paperclip.svg' (click)="downloadFile()" title="git checkout my/resume">
         <br>
-        <img src='../../assets/Icon feather-linkedin.svg' title="git checkout my/linkedin">
+        <img src='../../assets/Icon feather-linkedin.svg' title="git checkout my/linkedin" (click)="openLinkedIn()">
         <br>
-        <img src='../../assets/Icon feather-youtube.svg' title="git checkout my/youtube">
+        <img src='../../assets/Icon feather-youtube.svg' title="git checkout my/youtube" (click)="openYoutube()">
         <br>
-        <img src='../../assets/Icon feather-github.svg' title="git checkout my/github">
+        <img src='../../assets/Icon feather-github.svg' title="git checkout my/github" (click)="openGithub()">
         <br>
-        <img src='../../assets/Icon feather-instagram.svg' title="git checkout my/instagram">
+        <img src='../../assets/Icon feather-instagram.svg' title="git checkout my/instagram" (click)="openInstagram()">
         <br>
         <img src='../../assets/Icon ionic-ios-close-circle.svg' title="close">
     </div>
 </div>
-
-<img src='../../assets/Icon metro-menu.svg' class="menu" title="menu">
+<div class="progress-bar"></div>
+<img src='../../assets/Icon metro-menu.svg' class="menu" title="menu" (click)="navigateToMenu()">

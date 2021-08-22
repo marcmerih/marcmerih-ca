@@ -1,0 +1,29 @@
+<div class="row">
+    <div [class]="(shouldDisplaySideNav) ? 'col-md-12 container' : 'col-md-12 container-none'">
+        <div class="rest">
+            <div class="navigation">
+                <span (click)="navigateTo('home')">/home</span>
+                <br>
+                <span (click)="navigateTo('about')">/about</span>
+                <br>
+                <span (click)="navigateTo('works')">/works</span>
+                <br>
+                <span (click)="navigateTo('contact')">/contact</span>
+            </div>
+            <div class="links">
+                <img src='../../assets/Icon feather-paperclip.svg' (click)="downloadFile()" title="git checkout my/resume">
+                <br>
+                <img src='../../assets/Icon feather-linkedin.svg' title="git checkout my/linkedin" (click)="openLinkedIn()">
+                <br>
+                <img src='../../assets/Icon feather-youtube.svg' title="git checkout my/youtube" (click)="openYoutube()">
+                <br>
+                <img src='../../assets/Icon feather-github.svg' title="git checkout my/github" (click)="openGithub()">
+                <br>
+                <img src='../../assets/Icon feather-instagram.svg' title="git checkout my/instagram" (click)="openInstagram()">
+                <br>
+                <br>
+                <span style="font-family: Gowun Dodum; font-size: 10pt; color: #efefef;">marcmerih</span>
+            </div>
+        </div>
+    </div>
+</div>

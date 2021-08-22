@@ -6,7 +6,7 @@
             </div>
             <div class="col-md-6 content">
                 <div [class]="(shouldDisplaySideNav) ? 'definition-initial' : 'definition-initial-none'">
-                    <span style="color: #00FEB1;"><u>Hello! I am Marcus, and I am a...</u></span>
+                    <span style="color: #00FEB1;">Hello! I am <u (click)="navigateToMenu()" style="cursor: pointer; color: white;">Marcus</u>, and I am a...</span>
                     <br><br>
                     <span class="definition-title">software engineer:</span>
                     <br>
