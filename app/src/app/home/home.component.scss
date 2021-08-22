@@ -1,0 +1,92 @@
+@import '../../styles.scss';
+
+.container, .container-none {
+    display: flex;
+    width: 100vw;
+    margin-left: 10em;
+    padding-left: 100px;
+    min-width: 660px;
+
+    .about-section, .landing {
+        height: 100vh;
+        display: flexbox;
+        position: relative;
+        padding: 50px;
+        float: right;
+
+        .image {
+            display: flex;
+            float: right;
+            justify-content: center;
+            vertical-align: middle;
+            padding: 25px;
+
+            img {
+                max-width:100%;
+                max-height:100%;
+                min-width: 50%;
+            }
+        }
+    
+        .content {
+            padding: 45px;
+            float: right;
+            min-width: 250px;
+            max-width: 500px;
+
+            .definition-initial, .definition-initial-none {
+                margin-top: 105px;
+                min-width: 350px;
+                text-align: center;
+
+                span {
+                    font-family: Gowun Dodum;
+                    font-size: 20px;
+                    color: $secondary-green;
+                    text-align: justify;
+
+                    &.definition-title {
+                        color: #efefef;
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            .definition-initial-none {
+                margin-top: 5px;
+            }
+
+            .hobbies, .curriculum {
+                margin-top: 35px;
+                text-align: justify;
+
+                .hobbies-title, .curriculum-title {
+                    color: #efefef;
+                    font-family: Gowun Dodum;
+                    font-size: 50px;
+                }
+
+                .hobbies-description {
+                    color: $secondary-green;
+                    font-family: Gowun Dodum;
+                    font-size: 20px;
+                }
+            }
+
+            .vitae-title {
+
+            }
+
+            .vitate-subtitle {
+
+            }
+        }
+    }
+}
+
+.container-none {
+    display: flex;
+    width: 100vw;
+    margin-left: 7em;
+    padding-left: 100px;
+}

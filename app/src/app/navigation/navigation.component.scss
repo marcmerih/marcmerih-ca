@@ -1,0 +1,28 @@
+@import '../../styles.scss';
+
+.nav-menu {
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    width: 7em;
+    border-right: 2px solid $primary-green;
+    padding: 15px;
+
+    .links {
+        display: flexbox;
+        margin-top: 450px;
+
+        img {
+            width: 30%;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+    }
+}
+
+.menu {
+    position: fixed;
+    margin-left: 150px;
+    margin-top: 20px;
+    height: 1em;
+}
